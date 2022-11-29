@@ -1,0 +1,17 @@
+if($num>1)
+{
+  $query= "INSERT INTO $tbname VALUES ( '$name_t[0]')";
+  $entry=mysqli_query($conn,$query);
+  if($entry){
+    echo "successfully inserted";
+  }
+}
+
+// now updating the records
+ 
+
+//first inserting all the text fields
+for ($i=0; $i <$num_text ; $i++) { 
+    $query1="UPDATE $tbname SET `subscription_details`='[value-1]',`CLASS`='[value-3]',`ADDRESS`='[value-4]',`PHONENO`='[value-5]',`PINCODE`='[value-6]',`COURSE`='[value-7]' WHERE `NAME` LIKE 'PRINCE VERMA';";
+    $entry1=mysqli_query($conn,$query1);
+ }
